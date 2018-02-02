@@ -1,0 +1,91 @@
+/*
+Theme Name: Swiego
+Theme URI: http://swiego.com
+Author: Evgeni Stas
+Description: Swiego single page
+Version: 1.0
+License: Creative license
+*/
+
+@font-face{
+    font-family: 'Lucida';
+    src: url('css/font/Lucida.ttf');
+    url('css/font/Lucida.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+ntml,body {
+    font-family: 'Lucida';
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.menu {
+    background-color: #21201B;
+}
+.menu nav {
+    float:right;
+    font-size: 16px;
+}
+.menu nav ul li {
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+}
+.menu nav ul li a {
+    text-decoration: none;
+}
+.menu:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.menu .logo {
+    float: left;
+}
+.menu .logo img {
+    padding: 10px;
+}
+.cover {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    width: 100%;
+    background: #333;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+.main-title {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #f9f1e9;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+a {
+    color:#F8F4F4;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
