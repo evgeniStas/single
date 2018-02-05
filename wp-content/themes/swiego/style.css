@@ -149,50 +149,50 @@ ntml,body {
     font-weight: normal;
     margin-bottom: 2em;
 }
-#section1 {
+#about {
     background: #FAFAFA;
 }
-#section1 .photo, #section4 .photo {
+#about .photo, #section4 .photo {
     overflow: hidden;
     height: 400px;
     width: 100%;
     text-align: right;
 }
-#section1 .photo img, #section4 .photo img {
+#about .photo img, #section4 .photo img {
     width: inherit;
 }
-#section1 .text, #section4 .text {
+#about .text, #section4 .text {
     text-align: left;
     margin-left: 51px;
     font-size: 16px;
     line-height: 2em;
     color: #6C6969;
 }
-#section2{
+#what{
     background: #FFFFFF;
 }
-#section2 .icon, #section4 .icon {
+#what .icon, #section4 .icon {
     color: #9013FE;
     font-size: 88px;
     margin-bottom: 50px;
 }
-#section2 .row h1 {
+#what .row h1 {
     color: #6C6969;
     font-size: 25px;
 }
-#section2 .row .desc {
+#what .row .desc {
     color: #6C6969;
     font-size: 16px;
     text-align: left;
     line-height: 1.5em;
 }
-#section2 .row .item, #section3 .row .item {
+#what .row .item, #section3 .row .item {
     margin:50px;
 }
 
-#section3, #section5 {
+#section3, #contact {
     background: #1C1B18;
-    width: 100%;
+    /*width: 100%;*/
     padding: 30px;
     color: #EEEEEE;
 }
@@ -234,6 +234,9 @@ ntml,body {
     background: #9013FE;
     border: 2px solid #9013FE;
 }
+.times-carusel {
+    display: none;
+}
 
 a {
     color: #F8F4F4;
@@ -248,11 +251,11 @@ a {
     padding-left: 65px;
     cursor: pointer;
 }
-#section5 .row {
+#contact .row {
     margin-left: 15%;
     margin-right: 15%;
 }
-#section5 h2 {
+#contact h2 {
     color: #EBEBEB;
     margin-bottom: 60px;
 }
@@ -324,7 +327,156 @@ a {
 #section6 h2{
     margin-bottom: 1em;
 }
+.lines {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    cursor:pointer;
+    display:none;
+}
 
+@media (max-width: 768px) {
+    .lines {
+        display: block;
+    }
+    .menu nav ul li {
+        display: block;
+    }
+    .mobile-menu:hover .menu-top-container  {
+        display:block;
+        z-index: 5;
+    }
+    .menu-top-container {
+        display:none;
+    }
+    .menu-top-container {
+        position:absolute;
+        top:0px;
+        right:0px;
+    }
+    #menu-top {
+        margin: 0px;
+        padding: 35px;
+    }
+    .container {
+        width: auto;
+    }
+    #about .photo, #section4 .photo {
+        overflow: hidden;
+        height: 200px;
+        width: 95%;
+        text-align: center;
+        display: inline-block;
+    }
+    #about .row, #section4 .row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #about .text, #section4 .text {
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-right: 0px;
+        font-size: 12px;
+    }
+
+    .contact-form .item {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    .times-carusel {
+        display: block;
+    }
+    .times {
+        display: none;
+    }
+    .row .item:nth-child(1) .feeld, .row .item:nth-child(2) .feeld {
+        margin: 0px;
+    }
+    #contact .row {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .contact-form input {
+        border: 1px solid #979797;
+        background-color: #FBFCFC;
+        padding: 3px;
+        font-size: 14px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    input[type=checkbox] {
+        transform: scale(2.5);
+        margin-right: 20px;
+    }
+    .buttons .button {
+        display: inline-block;
+    }
+    #section6 .desc {
+        font-size: 12px;
+    }
+    .section h2 {
+        font-size: 20px;
+    }
+    .main-title {
+        width:100%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .lines {
+        display: block;
+    }
+    .menu nav ul li {
+        display: block;
+    }
+    .mobile-menu:hover .menu-top-container  {
+        display:block;
+        z-index: 5;
+    }
+    .menu-top-container {
+        display:none;
+    }
+    .menu-top-container {
+        position:absolute;
+        top:0px;
+        right:0px;
+    }
+    #menu-top {
+        margin: 0px;
+        padding: 35px;
+    }
+
+    .container {
+        width: 970px;
+    }
+    #about .photo, #section4 .photo {
+        overflow: hidden;
+        height: 265px;
+        width: 75%;
+        text-align: center;
+        display: inline-block;
+    }
+    #about .row, #section4 .row{
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    #about .text, #section4 .text {
+        margin-left: 120px;
+        margin-top: 25px;
+        margin-right: 120px;
+        font-size: 14px;
+    }
+    .col-md-4 {
+        width: 33.33333%;
+        float: left;
+    }
+    .contact-form .col-md-6 {
+        width: 50%;
+        float: left;
+    }
+    .contact-form .item {
+        font-size: 14px;
+    }
+}
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
