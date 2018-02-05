@@ -12,7 +12,7 @@
     </head>
     <body>
     <div class="site-wrap">
-        <div class="menu">
+        <div class="menu main-menu">
             <div class="container">
                 <div class="logo">
                     <a href="#">
@@ -150,7 +150,7 @@
             </div>
         </div>
         <div id="section4" class="section">
-            <div class="container">
+            <div id="feedbacks" class="container">
                 <div class="icon icon-left-quote"></div>
 
                 <div class="carusel">
@@ -247,7 +247,7 @@
             </div>
         </div>
         <div id="section6" class="section">
-            <div id="feedbacks" class="container">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="item">
