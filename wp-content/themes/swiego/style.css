@@ -323,7 +323,7 @@ a {
 }
 #section6 a {
     display: inline-block;
-    margin: 10px;
+    margin: 5px;
 }
 #section6 .icon {
     font-size: 50px;
@@ -421,6 +421,7 @@ a {
     input[type=checkbox] {
         transform: scale(2.5);
         margin-right: 20px;
+        margin-left: 8px;
     }
     .buttons .button {
         display: inline-block;
