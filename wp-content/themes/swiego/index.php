@@ -31,7 +31,7 @@
                 </nav>
             </div>
         </div>
-        <div style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/img/cover.png')" class="cover">
+        <div id="home" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/img/cover.png')" class="cover navs">
             <div class="main-title">
                 <h1><?php bloginfo( 'name' ); ?></h1>
                 <h2><?php bloginfo('description'); ?></h2>
@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-        <div id="about" class="section">
+        <div id="about" class="section navs">
             <?php
             $id = 4;
             $post = get_post($id);
@@ -67,7 +67,7 @@
 
             </div>
         </div>
-        <div id="what" class="section">
+        <div id="what" class="section navs">
             <?php
             $id = 24;
             $post = get_post($id);
@@ -100,7 +100,7 @@
                 </div>
             </div>
         </div>
-        <div id="section3" class="section">
+        <div id="section3" class="section navs">
             <div class="container">
                 <div class="row times">
 
@@ -160,8 +160,8 @@
                 </div>
             </div>
         </div>
-        <div id="section4" class="section">
-            <div id="feedbacks" class="container">
+        <div id="feedbacks" class="section navs">
+            <div class="container">
                 <div class="icon icon-left-quote"></div>
 
                 <div class="carusel">
@@ -216,7 +216,7 @@
                 </div>
             </div>
         </div>
-        <div id="contact" class="section">
+        <div id="contact" class="section navs">
             <?php
             $id = 42;
             $post = get_post($id);
@@ -256,7 +256,7 @@
                 </div>
             </div>
         </div>
-        <div id="section6" class="section">
+        <div id="section6" class="section navs">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">

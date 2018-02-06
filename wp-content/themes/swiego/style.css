@@ -157,16 +157,16 @@ ntml,body {
 #about {
     background: #FAFAFA;
 }
-#about .photo, #section4 .photo {
+#about .photo, #feedbacks .photo {
     overflow: hidden;
-    height: 400px;
-    width: 100%;
+    height: 300px;
+    width: 90%;
     text-align: right;
 }
-#about .photo img, #section4 .photo img {
+#about .photo img, #feedbacks .photo img {
     width: inherit;
 }
-#about .text, #section4 .text {
+#about .text, #feedbacks .text {
     text-align: left;
     margin-left: 51px;
     font-size: 16px;
@@ -176,7 +176,7 @@ ntml,body {
 #what{
     background: #FFFFFF;
 }
-#what .icon, #section4 .icon {
+#what .icon, #feedbacks .icon {
     color: #9013FE;
     font-size: 88px;
     margin-bottom: 50px;
@@ -340,7 +340,7 @@ a {
     display:none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 740px) {
     .lines {
         display: block;
     }
@@ -366,18 +366,18 @@ a {
     .container {
         width: auto;
     }
-    #about .photo, #section4 .photo {
+    #about .photo, #feedbacks .photo {
         overflow: hidden;
-        height: 200px;
+        height: 400px;
         width: 95%;
         text-align: center;
         display: inline-block;
     }
-    #about .row, #section4 .row{
+    #about .row, #feedbacks .row{
         margin-left: 0px;
         margin-right: 0px;
     }
-    #about .text, #section4 .text {
+    #about .text, #feedbacks.text {
         margin-left: 0px;
         margin-top: 10px;
         margin-right: 0px;
@@ -426,7 +426,7 @@ a {
         width:100%;
     }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 740px) and (max-width: 1200px) {
     .lines {
         display: block;
     }
@@ -451,28 +451,32 @@ a {
     }
 
     .container {
-        width: 750px;
+        width: 650px;
     }
-    #about .photo, #section4 .photo {
+    #about .photo, #feedbacks .photo {
         overflow: hidden;
         height: 265px;
         width: 75%;
         text-align: center;
         display: inline-block;
     }
-    #about .row, #section4 .row{
+    #about .row, #feedbacks .row{
+        /*
         margin-left: 150px;
         margin-right: 150px;
+        */
     }
-    #about .text, #section4 .text {
+    #about .text, #feedbacks .text {
         margin-left: 120px;
         margin-top: 25px;
         margin-right: 120px;
         font-size: 14px;
     }
     .col-md-4 {
+
         width: 33.33333%;
         float: left;
+
     }
     .contact-form .col-md-6 {
         width: 50%;
@@ -481,10 +485,26 @@ a {
     .contact-form .item {
         font-size: 14px;
     }
+    #what .container, #contact .container {
+        width: auto;
+    }
+    #what .row .item, #section3 .row .item {
+        margin: 35px;
+    }
+    #section6 .icon {
+        font-size: 40px;
+    }
+    #contact .row {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .main-title .buttons {
+        width: 500px;
+    }
 }
 @media (min-width: 1200px) {
     .container {
-        width: 1170px;
+        width: 1130px;
     }
     .col-md-6 {
         width: 50%;
