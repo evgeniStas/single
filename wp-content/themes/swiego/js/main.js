@@ -15,6 +15,14 @@ $(function() {
 
         $('body,html').animate({scrollTop: top}, 800);
     });
+    $("#home .buttons").on("click","div", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href');
+        var top = $(id).offset().top;
+
+
+        $('body,html').animate({scrollTop: top}, 800);
+    });
 
     $("#send").click(function(){
         var name_el = $("#name");

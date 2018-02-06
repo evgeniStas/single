@@ -40,8 +40,8 @@
                 <h1><?php bloginfo( 'name' ); ?></h1>
                 <h2><?php bloginfo('description'); ?></h2>
                 <div class="buttons">
-                    <div class="button">Book Now</div>
-                    <a href="#">More About Us</a>
+                    <div href="#contact" class="button">Book Now</div>
+                    <div href="#about"><a href="#about">More About Us</a></div>
                 </div>
             </div>
         </div>
