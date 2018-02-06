@@ -230,20 +230,20 @@
                         <div class="item col-md-6">
                             <div class="feeld">
                                 <div>Name</div>
-                                <input type="text" />
+                                <input id="name" type="text" />
                             </div>
                         </div>
                         <div class="item col-md-6">
                             <div class="feeld">
                                 <div>E-mail</div>
-                                <input type="text" />
+                                <input id="email" type="text" />
                             </div>
                         </div>
                     </div>
                     <div class="message row">
                         <div class="item">
                             <div>Message</div>
-                            <textarea></textarea>
+                            <textarea id="message"></textarea>
                         </div>
                     </div>
                     <div class="check row item">
@@ -251,7 +251,7 @@
                         <label for="send_me">Send a copy to myself</label>
                     </div>
                     <div class="row buttons">
-                        <div class="button">Send</div>
+                        <div id="send" class="button">Send</div>
                     </div>
                 </div>
             </div>

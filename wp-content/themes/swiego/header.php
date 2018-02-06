@@ -11,3 +11,6 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="<?php echo get_template_directory_uri();?>/js/main.js"></script>
 <?php wp_head(); ?>
+<script>
+    var ajax_url = '<?php echo admin_url('admin-ajax.php');?>';
+</script>

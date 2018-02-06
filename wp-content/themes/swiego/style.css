@@ -339,6 +339,12 @@ a {
     cursor:pointer;
     display:none;
 }
+.success {
+    color: #14b314;
+}
+.error {
+    color: #e5222f;
+}
 
 @media (max-width: 740px) {
     .lines {
