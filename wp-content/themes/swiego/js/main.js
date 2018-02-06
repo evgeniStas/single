@@ -5,7 +5,8 @@ $(function() {
         $($(this).parent().parent().children()).removeClass("active");
         $(this).addClass("active");
         var position = $(this).index();
-        //alert(position);
         $($(this).parent().parent().children().eq(position)).addClass("active");
     });
+
+
 });
