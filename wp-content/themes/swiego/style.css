@@ -77,6 +77,9 @@ ntml,body {
     left: 0px;
     bottom: 0px;
 }
+.menu .logo img {
+    width: 250px;
+}
 
 .cover {
     height: 100%;
@@ -430,6 +433,9 @@ a {
     }
     .main-title {
         width:100%;
+    }
+    .menu .logo img {
+        width: 180px;
     }
 }
 @media (min-width: 740px) and (max-width: 1200px) {

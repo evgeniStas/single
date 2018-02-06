@@ -16,7 +16,11 @@
             <div class="container">
                 <div class="logo">
                     <a href="#">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/swiego_logo_transp_w.png" width="250" height="40" alt="SWIEGO">
+                        <?php
+                        $meta_values = get_post_meta( 12,"logo");
+                        $logo = wp_get_attachment_image_src($meta_values[0], 'full')[0];
+                        ?>
+                        <img src="<?php echo $logo; ?>" alt="SWIEGO">
                     </a>
                 </div>
                 <nav class="mobile-menu">
