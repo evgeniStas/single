@@ -1,12 +1,17 @@
+var timerCarusel, timerCarusel2;
+
 $(function() {
     var caruselControl = $(".carusel .pages div");
     caruselControl.click(function(){
+        clearTimeout(timerCarusel);
+        CaruselAuto();
         $($(this).parent().children()).removeClass("active");
         $($(this).parent().parent().children()).removeClass("active");
         $(this).addClass("active");
         var position = $(this).index();
         $($(this).parent().parent().children().eq(position)).addClass("active");
     });
+
     $("nav").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href');
@@ -70,7 +75,7 @@ $(function() {
         });
 
     });
-
+    CaruselAuto();
 });
 jQuery(window).scroll(function(){
     var $sections = $('.navs');
@@ -86,6 +91,41 @@ jQuery(window).scroll(function(){
         }
     })
 });
+
+function CaruselAuto(){
+    var caruselControl = $("#feedbacks .carusel .pages .control");
+    var caruselControl2 = $("#section3 .carusel .pages .control");
+    timerCarusel = setTimeout(function() {
+        CaruselAuto();
+        $(caruselControl).each(function(i,elem) {
+            if ($(this).hasClass("active") || i+1 == caruselControl.length) {
+                if(i+1 == caruselControl.length){
+                    i=-1;
+                }
+                $($(this).parent().children()).removeClass("active");
+                $($(this).parent().parent().children(".row")).removeClass("active");
+                $(this).parent().children().eq(i+1).addClass("active");
+                $($(this).parent().parent().children(".row").eq(i+1)).addClass("active");
+                return false;
+            }
+        });
+    }, 5000);
+    timerCarusel2 = setTimeout(function() {
+        CaruselAuto();
+        $(caruselControl2).each(function(i,elem) {
+            if ($(this).hasClass("active") || i+1 == caruselControl.length) {
+                if(i+1 == caruselControl.length){
+                    i=-1;
+                }
+                $($(this).parent().children()).removeClass("active");
+                $($(this).parent().parent().children(".row")).removeClass("active");
+                $(this).parent().children().eq(i+1).addClass("active");
+                $($(this).parent().parent().children(".row").eq(i+1)).addClass("active");
+                return false;
+            }
+        });
+    }, 5000);
+}
 
 function ValidateEmail(mail)
 {
