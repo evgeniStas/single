@@ -282,7 +282,7 @@
                                 setup_postdata($item);
                                 $meta_values = get_post_meta( $item->ID );
                                 ?>
-                                <a href="<?php echo $meta_values["link"][0];?>"><div class="<?php echo $meta_values["icon"][0];?>"></div></a>
+                                <a target="_blank" href="<?php echo $meta_values["link"][0];?>"><div class="<?php echo $meta_values["icon"][0];?>"></div></a>
                                 <?php
                                 $i++;
                             }

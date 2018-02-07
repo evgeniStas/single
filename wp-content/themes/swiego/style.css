@@ -16,7 +16,7 @@ License: Creative license
 }
 
 
-ntml,body {
+html,body {
     font-family: 'Lucida';
     width: 100%;
     margin: 0px;
@@ -348,6 +348,10 @@ a {
 .error {
     color: #e5222f;
 }
+.contact-form .button {
+    display: inline-block;
+    float: left;
+}
 
 @media (max-width: 740px) {
     .lines {
@@ -437,6 +441,9 @@ a {
     }
     .menu .logo img {
         width: 180px;
+    }
+    .contact-form .button {
+        float: none;
     }
 }
 @media (min-width: 740px) and (max-width: 1200px) {
