@@ -97,20 +97,21 @@ html,body {
     padding: 0;
     color: #f9f1e9;
     text-align: center;
-    top: 50%;
+    top: 55%;
     left: 50%;
     -webkit-transform: translate3d(-50%,-50%,0);
     transform: translate3d(-50%,-50%,0);
 }
 .main-title h1 {
     font-size: 70px;
-    line-height: 0em;
+    line-height: 0.5em;
+    letter-spacing: 0.1em;
 }
 .main-title h2 {
     font-weight: normal;
 }
 .main-title .buttons {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .main-title .buttons > *{
     display:inline-block;
@@ -120,7 +121,12 @@ html,body {
 .main-title .buttons a {
     line-height: 2.5em;
 }
-
+.main-title .buttons a:hover {
+    color: #CFCCCC;
+}
+.main-title .buttons a:hover::after {
+    background-color: #CFCCCC;
+}
 .main-title .buttons a::after  {
     display: block;
     content: "";
@@ -143,8 +149,9 @@ html,body {
 }
 
 .section {
-    padding: 3em 0;
+    padding: 115px;
     color: #393939;
+    padding-bottom: 110px;
 }
 .section h1 {
     font-size: 40px;
@@ -156,6 +163,7 @@ html,body {
     color: #6C6969;
     font-weight: normal;
     margin-bottom: 2em;
+    padding-top: 25px;
 }
 #about {
     background: #FAFAFA;
@@ -187,6 +195,7 @@ html,body {
 #what .row h1 {
     color: #6C6969;
     font-size: 25px;
+    margin-bottom: 30px;
 }
 #what .row .desc {
     color: #6C6969;
@@ -195,13 +204,12 @@ html,body {
     line-height: 1.5em;
 }
 #what .row .item, #section3 .row .item {
-    margin:50px;
+    margin: 62px;
 }
 
 #section3, #contact {
     background: #1C1B18;
     /*width: 100%;*/
-    padding: 30px;
     color: #EEEEEE;
 }
 #section3 h2 {
@@ -258,6 +266,9 @@ a {
     padding-right: 65px;
     padding-left: 65px;
     cursor: pointer;
+}
+.button:hover {
+    background-color: #8C32DB;
 }
 #contact .row {
     margin-left: 15%;
@@ -329,6 +340,9 @@ a {
     font-size: 50px;
     color: #CBCBCB;
 }
+#section6 .icon:hover {
+    color: #A647FB;
+}
 #section6 .social {
     margin-top: 30px;
 }
@@ -351,6 +365,16 @@ a {
 .contact-form .button {
     display: inline-block;
     float: left;
+}
+.check label {
+    vertical-align: bottom;
+}
+.check item {
+    vertical-align: bottom;
+    margin: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    margin-right: 10px;
 }
 
 @media (max-width: 740px) {
@@ -444,6 +468,9 @@ a {
     }
     .contact-form .button {
         float: none;
+    }
+    .section {
+        padding: unset;
     }
 }
 @media (min-width: 740px) and (max-width: 1200px) {
